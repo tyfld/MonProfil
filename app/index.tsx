@@ -18,7 +18,8 @@ export default function HomeScreen() {
     );
 }
 const styles = StyleSheet.create({
-    container: { flex: 1, backgroundColor: '#FFFFFF' },
+    // Mise en page
+    container: { flex:1, backgroundColor:'#FFF', alignItems:'center',justifyContent:'center', paddingHorizontal:24 },
     // Photo de profil
     avatar: { width: 120, height: 120, borderRadius: 60, marginBottom: 16 },
     // Nom et Titre
