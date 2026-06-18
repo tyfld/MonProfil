@@ -1,6 +1,8 @@
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useRouter } from 'expo-router';
 export default function HomeScreen() {
+    const router = useRouter();
     return (
         <>
             <SafeAreaView style={styles.container}>
@@ -10,7 +12,7 @@ export default function HomeScreen() {
                 <Text style={styles.name}>LE DEVEHAT Tyfenn</Text>
                 <Text style={styles.role}>Software Engineer</Text>
                 {/* Bouton de contact */}
-                <TouchableOpacity style={styles.btn} onPress={() => console.log('Contact !')}>
+                <TouchableOpacity style={styles.btn} onPress={() => router.push('/about')}>
                     <Text style={styles.btnText}>Me contacter</Text>
                 </TouchableOpacity>
             </SafeAreaView>
